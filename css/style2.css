@@ -140,7 +140,7 @@ html,body{
 .head_icon{
 	width: 40px;
 	height: 40px;
-	background-image: url(C:\Users\Administrator\Desktop\工作室宣传页\E1-304\img);
+	background-image: url(../img/head_icon.png);
 	background-size: 100% auto;
 	border-radius: 50%;
 	background-color: purple;
