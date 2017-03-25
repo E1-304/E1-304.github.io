@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:12px;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;border:none; background:none;}
+textarea{resize:none;}
+a{text-decoration:none; color:#656565;}
+
+/*清浮动*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+
+html,body{
+	height: 100%;
+}
+
+.content{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.little_box{
+	height: 100%;
+	width: 20%;
+	display: inline-block;
+	position: absolute;
+	transition: all 0.1s linear;
+	z-index: 1;
+}
+
+.little_box:hover{
+	transform: scaleX(1.125);
+	z-index: 99;
+}
+
+.content div:nth-child(1){
+	background-color: red;
+}
+
+.content div:nth-child(2){
+	background-color: blue;
+	margin-left: 20%;
+}
+
+.content div:nth-child(3){
+	background-color: green;
+	margin-left: 40%;
+}
+
+.content div:nth-child(4){
+	background-color: pink;
+	margin-left: 60%;
+}
+
+.content div:nth-child(5){
+	background-color: grey;
+	margin-left: 80%;
+}
+
+/*#jia{
+	background-color: red;
+}
+
+#chuan{
+	background-color: blue;
+	margin-left: 20%;
+}
+
+#gang{
+	background-color: green;
+	margin-left: 40%;
+}
+
+#fei{
+	background-color: pink;
+	margin-left: 60%;
+}
+
+#yu{
+	background-color: grey;
+	margin-left: 80%;
+}*/
+
+.jia_transform{
+	background-color: purple;
+	/*filter: brightness(.5);
+	opacity: .5;
+*/	height: 100%;
+	width: 20%;
+	display: inline-block;
+	position: absolute;
+	transition: all 0.3s linear;
+	z-index: 1;
+}
+.chaun_transform{
+	background-color: blue;
+	margin-left: 20%;
+	height: 100%;
+	width: 20%;
+	display: inline-block;
+	position: absolute;
+	transition: all 0.3s linear;
+	z-index: 1;
+}
+.gang_transform{
+	background-color: green;
+	margin-left: 40%;
+	height: 100%;
+	width: 20%;
+	display: inline-block;
+	position: absolute;
+	transition: all 0.3s linear;
+	z-index: 1;
+}
+.fei_transform{
+	background-color: pink;
+	margin-left: 60%;
+	height: 100%;
+	width: 20%;
+	display: inline-block;
+	position: absolute;
+	transition: all 0.3s linear;
+	z-index: 1;
+}
+.yu_transform{
+	background-color: grey;
+	margin-left: 80%;
+	height: 100%;
+	width: 20%;
+	display: inline-block;
+	position: absolute;
+	transition: all 0.3s linear;
+	z-index: 1;
+}
+
+
+.head_icon{
+	width: 40px;
+	height: 40px;
+	background-image: url(C:\Users\Administrator\Desktop\工作室宣传页\E1-304\img);
+	background-size: 100% auto;
+	border-radius: 50%;
+	background-color: purple;
+}
+
