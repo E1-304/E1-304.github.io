@@ -1,6 +1,7 @@
+
+   
 window.onload = function(){
 	document.getElementById("jia").onmouseover = function() {
-		console.log("2123");
 		document.getElementById("gang").classList.add("gang_transform");
 		document.getElementById("chuan").classList.add("chaun_transform");
 		document.getElementById("fei").classList.add("fei_transform");
