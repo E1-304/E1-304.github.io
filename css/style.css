@@ -16,13 +16,43 @@ html,body{
 	height: 100%;
 }
 
-.content{
-	width: 100%;
-	height: 100%;
-	position: relative;
+body{
+	overflow:-scroll;
+	overflow-y:hidden;
+	overflow-x:hidden;
 }
 
-.little_box{
+.content{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	transition: all 0.1s linear;
+	z-index: 1;
+}
+
+.little_box_jia:hover,
+.little_box_chuan:hover,
+.little_box_gang:hover,
+.little_box_fei:hover,
+.little_box_yu:hover{
+	transform: scale(1.225);
+	z-index: 99;
+	/*overflow:hidden;*/
+}
+
+.little_box_jia{
+	background-color: red;
+	height: 100%;
+	width: 20%;
+	display: inline-block;
+	position: absolute;
+	transition: all 0.2s linear;
+	z-index: 1;
+}
+
+.little_box_chuan{
+	background-color: blue;
+	margin-left: 20%;
 	height: 100%;
 	width: 20%;
 	display: inline-block;
@@ -31,118 +61,109 @@ html,body{
 	z-index: 1;
 }
 
-.little_box:hover{
-	transform: scaleX(1.125);
-	z-index: 99;
-}
-
-.content div:nth-child(1){
-	background-color: red;
-}
-
-.content div:nth-child(2){
-	background-color: blue;
-	margin-left: 20%;
-}
-
-.content div:nth-child(3){
+.little_box_gang{
 	background-color: green;
 	margin-left: 40%;
-}
-
-.content div:nth-child(4){
-	background-color: pink;
-	margin-left: 60%;
-}
-
-.content div:nth-child(5){
-	background-color: grey;
-	margin-left: 80%;
-}
-
-/*#jia{
-	background-color: red;
-}
-
-#chuan{
-	background-color: blue;
-	margin-left: 20%;
-}
-
-#gang{
-	background-color: green;
-	margin-left: 40%;
-}
-
-#fei{
-	background-color: pink;
-	margin-left: 60%;
-}
-
-#yu{
-	background-color: grey;
-	margin-left: 80%;
-}*/
-
-.jia_transform{
-	background-color: purple;
-	/*filter: brightness(.5);
-	opacity: .5;
-*/	height: 100%;
+	height: 100%;
 	width: 20%;
 	display: inline-block;
 	position: absolute;
+	transition: all 0.1s linear;
+	z-index: 1;
+}
+
+.little_box_fei{
+	background-color: pink;
+	margin-left: 60%;
+	height: 100%;
+	width: 20%;
+	display: inline-block;
+	position: absolute;
+	transition: all 0.1s linear;
+	z-index: 1;
+}
+
+.little_box_yu{
+	background-color: grey;
+	margin-left: 80%;
+	height: 100%;
+	width: 20%;
+	display: inline-block;
+	position: absolute;
+	transition: all 0.1s linear;
+	z-index: 1;
+}
+
+.jia_transform{
+	background-color: red;
+	filter: brightness(.5);
+	height: 100%;
+	width: 20%;
+	display: inline-block;
+	
 	transition: all 0.3s linear;
 	z-index: 1;
 }
 .chaun_transform{
 	background-color: blue;
+	filter: brightness(.5);
 	margin-left: 20%;
 	height: 100%;
 	width: 20%;
 	display: inline-block;
-	position: absolute;
+	
 	transition: all 0.3s linear;
 	z-index: 1;
 }
 .gang_transform{
 	background-color: green;
+	filter: brightness(.5);
 	margin-left: 40%;
 	height: 100%;
 	width: 20%;
 	display: inline-block;
-	position: absolute;
-	transition: all 0.3s linear;
+	
+	transition: all 0.2s linear;
 	z-index: 1;
 }
 .fei_transform{
 	background-color: pink;
+	filter: brightness(.5);
 	margin-left: 60%;
 	height: 100%;
 	width: 20%;
 	display: inline-block;
-	position: absolute;
+	
 	transition: all 0.3s linear;
 	z-index: 1;
 }
 .yu_transform{
 	background-color: grey;
+	filter: brightness(.5);
 	margin-left: 80%;
 	height: 100%;
 	width: 20%;
 	display: inline-block;
-	position: absolute;
+	
 	transition: all 0.3s linear;
 	z-index: 1;
 }
 
-
 .head_icon{
-	width: 40px;
-	height: 40px;
-	background-image: url(../img/head_icon.png);
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/fei.png);
 	background-size: 100% auto;
 	border-radius: 50%;
 	background-color: purple;
+	margin: 0 auto;
+	margin-top: 200px;
+}
+
+.text{
+	padding: 50px 40px;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
 }
 
