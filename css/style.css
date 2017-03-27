@@ -224,32 +224,56 @@ body{
 .yu_block{
 	width: 100%;
 	height: 100%;
-	transition: all 0.3s linear;
+	transition: all 0.7s linear;
 }
 
-.before{
+.onclick_before{
 	opacity: 1;
 }
 
-.after{
-	/*transition: all 0.3s linear;*/
-	opacity: 0;
+.onclick_after{
+	display: none;
 }
 
-.a{
-	opacity: 0;
+.personal_statement{
+	opacity: 1;
 	padding-left: 50%;
+	margin-top: 1500px;
 	font-weight: bold;
 	font-size: 25px;
-	color: green;
+	color: #543210;
+	z-index: 999;
 }
 
-.b{
+/*.b{
 	transition: all 1s linear;
 	opacity: 1;
+}*/
+
+@-webkit-keyframes imgAnimation{  
+    0%{ margin-top: 1500px;opacity:0; }  
+    50%{margin-top: 100px;opacity: .5;}
+    100%{ margin-top: 200px;opacity: 1;}  
+ }
+
+.imgAnimation{  
+      animation-name: imgAnimation;
+      animation: imgAnimation 1s alternate;
+      margin-top: 200px;
+ }
+
+@-webkit-keyframes fallbackAnimation{
+	0%{ margin-top: 200px;opacity: 1; }  
+    50%{margin-top: 100px;opacity: .5;}
+    100%{ margin-top: 1500px;opacity:0;}
 }
 
-
+.fallbackAnimation{
+	animation-name: fallbackAnimation;
+     animation: fallbackAnimation 1s alternate;
+     margin-top: 1500px;
+}
+ 
 /*Begin Animation*/
 .content {
     display: none;
