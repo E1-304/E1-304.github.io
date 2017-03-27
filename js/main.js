@@ -108,7 +108,7 @@ window.onload = function(){
 	}
 	document.getElementById("fei_return").onclick = function(e) {
 		e.stopPropagation();//事件冒泡解决方法
-		setTimeout('document.getElementById("fe4").classList.remove("big_box_fei","fei_block");document.getElementById("fei").classList.add("little_box_fei","fei_transform");document.getElementsByClassName("onclick_before")[3].classList.remove("onclick_after");',1000);
+		setTimeout('document.getElementById("fe").classList.remove("big_box_fei","fei_block");document.getElementById("fei").classList.add("little_box_fei","fei_transform");document.getElementsByClassName("onclick_before")[3].classList.remove("onclick_after");',1000);
 		document.getElementsByClassName("personal_statement")[3].classList.add("fallbackAnimation");
 	}
 	document.getElementById("yu_return").onclick = function(e) {
