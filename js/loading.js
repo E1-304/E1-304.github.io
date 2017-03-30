@@ -18,7 +18,6 @@ var d = dialog({
 			}, 2000);
 			return false;
 		}
-		
 	},
 	cancelValue: '关闭',
 	cancel: function () {
@@ -35,6 +34,7 @@ function WindowsBegin () {
 	$('.loading').fadeOut(3000, function() {
 		$('.loading').remove();
 		$(".game").fadeIn(3000, function() {
+            $(".dg").css("zIndex","11");
 			$("#gameMusic")[0].play();
             $("#gameBtn").one("click",function(event) {
                 var d = dialog({

@@ -448,8 +448,8 @@ body{
 }
 .game button{
 	position: absolute;
-    top: 0;
-    right: 0;
+    bottom: 0px;
+    left: 0px;
     padding: 5px 15px;
 }
 
