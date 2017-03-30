@@ -1,4 +1,4 @@
-window.onload = function(){
+	
 	// 鼠标滑过更换类名，用于控制颜色和大小的变化
 	document.getElementById("jia").onmouseover = function() {
 		document.getElementById("gang").classList.add("gang_transform");
@@ -12,6 +12,7 @@ window.onload = function(){
 		document.getElementById("fei").classList.remove("fei_transform");
 		document.getElementById("yu").classList.remove("yu_transform");
 	}
+
 	document.getElementById("chuan").onmouseover = function() {
 		document.getElementById("jia").classList.add("jia_transform");
 		document.getElementById("gang").classList.add("gang_transform");
@@ -60,19 +61,54 @@ window.onload = function(){
 		document.getElementById("fei").classList.remove("fei_transform");
 		document.getElementById("gang").classList.remove("gang_transform");
 	}
+
+
+	//fixed first
 	// 点击之后更换类名，用于查看个人样式
 	document.getElementById("jia").onclick = function() {
 		document.getElementById("jia").classList.remove("little_box_jia","_jiatransform");
 		document.getElementById("jia").classList.add("big_box_jia","jia_block");
 		document.getElementsByClassName("onclick_before")[0].classList.add("onclick_after");
-		setTimeout('document.getElementsByClassName("personal_statement")[0].classList.remove("fallbackAnimation");document.getElementsByClassName("personal_statement")[0].classList.add("imgAnimation")',1000);
+		isOpen = true;
+		console.log('jia');
+		setTimeout(function () {
+			//面板展开的情况下无法删除fallbackAnimation
+			document.getElementsByClassName("personal_statement")[0].classList.remove("fallbackAnimation");
+			document.getElementsByClassName("personal_statement")[0].classList.add("imgAnimation")
+		}, 1000);
+		document.getElementById("jia").onclick = null;
 	}
+	
+	document.getElementById("jia_return").onclick = function(e) {
+		e.stopPropagation();//事件冒泡解决方法
+		e.preventDefault();
+		console.log('jia_return');
+			setTimeout(function () {
+				document.getElementById("jia").classList.remove("big_box_jia","jia_block");
+				document.getElementById("jia").classList.add("little_box_jia","jia_transform");
+				document.getElementsByClassName("onclick_before")[0].classList.remove("onclick_after");
+			}, 1000);
+			document.getElementsByClassName("personal_statement")[0].classList.add("fallbackAnimation");
+	}
+
+
+
+
+
+
+
 	document.getElementById("chuan").onclick = function() {
 		document.getElementById("chuan").classList.remove("little_box_chuan","chuan_transform");
 		document.getElementById("chuan").classList.add("big_box_chuan","chuan_block");
 		document.getElementsByClassName("onclick_before")[1].classList.add("onclick_after");
-		setTimeout('document.getElementsByClassName("personal_statement")[1].classList.remove("fallbackAnimation");document.getElementsByClassName("personal_statement")[1].classList.add("imgAnimation")',1000);
+		//seTimeout 
+		setTimeout(function () {
+			document.getElementsByClassName("personal_statement")[1].classList.remove("fallbackAnimation");
+			document.getElementsByClassName("personal_statement")[1].classList.add("imgAnimation")
+		}, 1000)
 	}
+
+
 	document.getElementById("gang").onclick = function() {
 		document.getElementById("gang").classList.remove("little_box_gang","gang_transform");
 		document.getElementById("gang").classList.add("big_box_gang","gang_block");
@@ -91,13 +127,8 @@ window.onload = function(){
 		document.getElementsByClassName("onclick_before")[4].classList.add("onclick_after");
 		setTimeout('document.getElementsByClassName("personal_statement")[4].classList.remove("fallbackAnimation");document.getElementsByClassName("personal_statement")[4].classList.add("imgAnimation")',1000);		
 	}
-	document.getElementById("jia_return").onclick = function(e) {
-		e.stopPropagation();//事件冒泡解决方法
-		setTimeout('document.getElementById("jia").classList.remove("big_box_jia","jia_block");document.getElementById("jia").classList.add("little_box_jia","jia_transform");document.getElementsByClassName("onclick_before")[0].classList.remove("onclick_after");',1000);
-		document.getElementsByClassName("personal_statement")[0].classList.add("fallbackAnimation");
-	}
 	document.getElementById("chuan_return").onclick = function(e) {
-		e.stopPropagation();//事件冒泡解决方法
+		//事件冒泡解决方法
 		setTimeout('document.getElementById("chuan").classList.remove("big_box_chuan","chuan_block");document.getElementById("chuan").classList.add("little_box_chuan","chuan_transform");document.getElementsByClassName("onclick_before")[1].classList.remove("onclick_after");',1000);
 		document.getElementsByClassName("personal_statement")[1].classList.add("fallbackAnimation");
 	}
@@ -116,4 +147,3 @@ window.onload = function(){
 		setTimeout('document.getElementById("yu").classList.remove("big_box_yu","yu_block");document.getElementById("yu").classList.add("little_box_yu","yu_transform");document.getElementsByClassName("onclick_before")[4].classList.remove("onclick_after");',1000);
 		document.getElementsByClassName("personal_statement")[4].classList.add("fallbackAnimation");
 	}
-}
