@@ -4,7 +4,7 @@ body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{
 body{font-size:12px;}
 img{border:none;}
 li{list-style:none;}
-select,textarea{outline:none;border:none; background:none;}
+input,select,textarea{outline:none;border:none; background:none;}
 textarea{resize:none;}
 a{text-decoration:none; color:#656565;}
 
@@ -120,7 +120,7 @@ body{
 	height: 100%;
 	width: 20%;
 	display: inline-block;
-	transition: all 0.2s linear;
+	transition: all 0.3s linear;
 	z-index: 1;
 }
 .fei_transform{
@@ -227,9 +227,9 @@ body{
 	transition: all 0.7s linear;
 }
 
-.onclick_before{
+/*.onclick_before{
 	opacity: 1;
-}
+}*/
 
 .onclick_after{
 	display: none;
@@ -237,43 +237,84 @@ body{
 
 .personal_statement{
 	opacity: 1;
-	padding-left: 50%;
-	margin-top: 1500px;
+	/*padding-left: 50%;*/
+	margin-top: 300%;
 	font-weight: bold;
 	font-size: 25px;
 	color: #543210;
 	z-index: 999;
+	width: 100%;
+	height: 100%;
+	position: relative;
 }
 
-/*.b{
-	transition: all 1s linear;
-	opacity: 1;
-}*/
-
 @-webkit-keyframes imgAnimation{  
-    0%{ margin-top: 1500px;opacity:0; }  
-    50%{margin-top: 100px;opacity: .5;}
-    100%{ margin-top: 200px;opacity: 1;}  
+    0%{ margin-top: 300%;opacity:0; }  
+    /*50%{margin-top: 10%;opacity: .5;}*/
+    100%{ margin-top: 0%;opacity: 1;}  
  }
 
 .imgAnimation{  
       animation-name: imgAnimation;
       animation: imgAnimation 1s alternate;
-      margin-top: 200px;
+      margin-top: 0%;
  }
 
 @-webkit-keyframes fallbackAnimation{
-	0%{ margin-top: 200px;opacity: 1; }  
-    50%{margin-top: 100px;opacity: .5;}
-    100%{ margin-top: 1500px;opacity:0;}
+	0%{ margin-top: 0%;opacity: 1; }  
+    /*50%{margin-top: 10%;opacity: .5;}*/
+    100%{ margin-top: 300%;opacity:0;}
 }
 
 .fallbackAnimation{
 	animation-name: fallbackAnimation;
      animation: fallbackAnimation 1s alternate;
-     margin-top: 1500px;
+     margin-top: 300%;
 }
- 
+/*小叉叉按钮*/
+.close_button{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.circle{
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 2px solid #1EBCC5;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+}
+.close::before{
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 70%;
+	background-color: orange;
+	top: 45%;
+	transform: rotate(45deg);
+	left: 14%;
+}
+
+.close::after{
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 70%;
+	background-color: orange;
+	top: 45%;
+	transform: rotate(-45deg);
+	left: 14%;
+}
+
+.close:hover{
+	transition: all 0.3s ease-in-out;
+	transform: rotate(270deg);
+	border: 4px solid #1EBCC5;
+}
+  
 /*Begin Animation*/
 .content{
 	display: none;
