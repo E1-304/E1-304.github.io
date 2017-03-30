@@ -66,7 +66,7 @@ function WindowsBegin () {
                     }
                 });
                 d.show();
-            };
+            });
 		});
 	});
 }
