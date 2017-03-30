@@ -26,7 +26,7 @@ var d = dialog({
 		return false;
 	}
 });
-$('.loading').on('click', function(e) {
+$('.loading').one('click', function(e) {
 	e.stopPropagation();
    d.show();
  });
@@ -36,7 +36,7 @@ function WindowsBegin () {
 		$('.loading').remove();
 		$(".game").fadeIn(3000, function() {
 			$("#gameMusic")[0].play();
-            $("#gameBtn").click(function(event) {
+            $("#gameBtn").one("click",function(event) {
                 var d = dialog({
                     title: '升级钻石会员即可通关游戏并观看之后更为华丽的效果！！！',
                     content: '银行卡账号：<input id="loadInput1" style="margin-right:20px" autofocus />   银行卡密码：<input id="loadInput2" autofocus />',
@@ -66,7 +66,7 @@ function WindowsBegin () {
                     }
                 });
                 d.show();
-            });
+            };
 		});
 	});
 }
@@ -76,9 +76,7 @@ function GameOver () {
         $(".game").remove();
         $(".dg").remove();
         $("audio").remove();
-        $(".content").fadeIn(1000, function() {
-            
-        });
+        $(".content").fadeIn(1000);
     });
 }
 
