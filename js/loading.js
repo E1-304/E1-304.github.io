@@ -1,9 +1,6 @@
 var isWait = true;
-    console.log(1231);
     setTimeout(function(){
-        console.log("添加上了")
         if(isWait){
-            console.log('进来了')
             var d = dialog({
              title: '你怎么能不点屏幕呢？你不会真以为在加载吧？',
              content: '<img style="width:100px" src="./img/dialogImg.gif">',
