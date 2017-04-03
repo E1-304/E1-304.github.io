@@ -41,7 +41,7 @@ body{
 }
 
 .little_box_jia{
-	background-color: red;
+	background-color: #198de8;
 	height: 100%;
 	width: 20%;
 	display: inline-block;
@@ -51,7 +51,7 @@ body{
 }
 
 .little_box_chuan{
-	background-color: blue;
+	background-color: #e3d059;
 	margin-left: 20%;
 	height: 100%;
 	width: 20%;
@@ -62,7 +62,7 @@ body{
 }
 
 .little_box_gang{
-	background-color: green;
+	background-color: #c9544e;
 	margin-left: 40%;
 	height: 100%;
 	width: 20%;
@@ -73,7 +73,7 @@ body{
 }
 
 .little_box_fei{
-	background-color: pink;
+	background-color: #48bf52;
 	margin-left: 60%;
 	height: 100%;
 	width: 20%;
@@ -84,7 +84,7 @@ body{
 }
 
 .little_box_yu{
-	background-color: grey;
+	background-color: #6f677c;
 	margin-left: 80%;
 	height: 100%;
 	width: 20%;
@@ -95,7 +95,7 @@ body{
 }
 
 .jia_transform{
-	background-color: red;
+	background-color: #198de8;
 	filter: brightness(.5);
 	height: 100%;
 	width: 20%;
@@ -104,7 +104,7 @@ body{
 	z-index: 1;
 }
 .chaun_transform{
-	background-color: blue;
+	background-color: #e3d059;
 	filter: brightness(.5);
 	margin-left: 20%;
 	height: 100%;
@@ -114,7 +114,7 @@ body{
 	z-index: 1;
 }
 .gang_transform{
-	background-color: green;
+	background-color: #c9544e;
 	filter: brightness(.5);
 	margin-left: 40%;
 	height: 100%;
@@ -124,7 +124,7 @@ body{
 	z-index: 1;
 }
 .fei_transform{
-	background-color: pink;
+	background-color: #48bf52;
 	filter: brightness(.5);
 	margin-left: 60%;
 	height: 100%;
@@ -134,7 +134,7 @@ body{
 	z-index: 1;
 }
 .yu_transform{
-	background-color: grey;
+	background-color: #6f677c;
 	filter: brightness(.5);
 	margin-left: 80%;
 	height: 100%;
@@ -163,35 +163,35 @@ body{
 }
 
 .big_box_jia{
-	background-color: red;
+	background-color: #198de8;
 	display: inline-block;
 	position: absolute;
 	z-index: 99;
 }
 
 .big_box_chuan{
-	background-color: blue;
+	background-color: #e3d059;
 	display: inline-block;
 	position: absolute;
 	z-index: 99;
 }
 
 .big_box_gang{
-	background-color: green;
+	background-color: #c9544e;
 	display: inline-block;
 	position: absolute;
 	z-index: 99;
 }
 
 .big_box_fei{
-	background-color: pink;
+	background-color: #48bf52;
 	display: inline-block;
 	position: absolute;
 	z-index: 99;
 }
 
 .big_box_yu{
-	background-color: grey;
+	background-color: #6f677c;
 	display: inline-block;
 	position: absolute;
 	z-index: 99;
