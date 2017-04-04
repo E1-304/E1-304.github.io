@@ -35,7 +35,7 @@ body{
 .little_box_gang:hover,
 .little_box_fei:hover,
 .little_box_yu:hover{
-	transform: scale(1.225);
+	transform: scale(1.1);
 	z-index: 99;
 	/*overflow:hidden;*/
 }
@@ -48,6 +48,8 @@ body{
 	position: absolute;
 	transition: all 0.2s linear;
 	z-index: 1;
+	background-image: url(../img/1.png);
+	background-size: cover;
 }
 
 .little_box_chuan{
@@ -59,6 +61,8 @@ body{
 	position: absolute;
 	transition: all 0.1s linear;
 	z-index: 1;
+	background-image: url(../img/2.png);
+	background-size: cover;
 }
 
 .little_box_gang{
@@ -70,6 +74,8 @@ body{
 	position: absolute;
 	transition: all 0.1s linear;
 	z-index: 1;
+	background-image: url(../img/3.png);
+	background-size: cover;
 }
 
 .little_box_fei{
@@ -81,6 +87,8 @@ body{
 	position: absolute;
 	transition: all 0.1s linear;
 	z-index: 1;
+	background-image: url(../img/4.png);
+	background-size: cover;
 }
 
 .little_box_yu{
@@ -92,6 +100,8 @@ body{
 	position: absolute;
 	transition: all 0.1s linear;
 	z-index: 1;
+	background-image: url(../img/5.png);
+	background-size: cover;
 }
 
 .jia_transform{
@@ -226,6 +236,8 @@ body{
 	height: 100%;
 	transition: all 0.7s linear;
 }
+
+/*.jia_flyin*/
 
 /*.onclick_before{
 	opacity: 1;
