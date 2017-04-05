@@ -1,4 +1,9 @@
 window.onload = function(){
+	document.getElementById("jia").classList.add("jia_flyin");
+	document.getElementById("chuan").classList.add("chuan_flyin");
+	document.getElementById("gang").classList.add("gang_flyin");
+	document.getElementById("fei").classList.add("fei_flyin");
+	document.getElementById("yu").classList.add("yu_flyin");
 	// 鼠标滑过更换类名，用于控制颜色和大小的变化
 	document.getElementById("jia").onmouseover = function() {
 		document.getElementById("gang").classList.add("gang_transform");
