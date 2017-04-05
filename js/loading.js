@@ -1,4 +1,4 @@
-$(document).ready(function(){
+window.onload = function(){
   //视频前的加载动画
   var myVid=$(".BeginAnimation video")[0];
   setTimeout(function(){
@@ -7,7 +7,7 @@ $(document).ready(function(){
             myVid.play();
         });
     })
-}, 3800);
+}, 3600);
   myVid.onended = function(){
     $(".BeginAnimation").fadeOut(1500, function() {
         $(".content").animate({opacity:1}, 1000,function(){
@@ -20,5 +20,5 @@ $(document).ready(function(){
         });
     });
   }
-});
+};
 
