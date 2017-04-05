@@ -1,4 +1,3 @@
-</head>
 @charset "utf-8";
 /* CSS Document */
 body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
@@ -31,6 +30,24 @@ body{
 	z-index: 1;
 }
 
+.big_head{
+	position: fixed;
+	width: 100%;
+	height: 52px;
+	z-index: 2;
+	border-bottom: 2px solid white;
+	background-color: rgba(0,0,0,0.1);
+}
+
+.big_head_icon{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-image: url(../img/big_head_icon.png);
+	background-size: 100% auto;
+	margin: 10px auto;
+}
+
 .little_box_jia:hover,
 .little_box_chuan:hover,
 .little_box_gang:hover,
@@ -38,6 +55,7 @@ body{
 .little_box_yu:hover{
 	transform: scale(1.1);
 	z-index: 99;
+	transition: all 0.3s ease;
 	/*overflow:hidden;*/
 }
 
@@ -48,7 +66,7 @@ body{
 	width: 20%;
 	display: inline-block;
 	position: absolute;
-	transition: all 1s ease-out;
+	transition: all 0.3s ease;
 	z-index: 1;
 	background-image: url(../img/1.png);
 	background-size: cover;
@@ -62,7 +80,7 @@ body{
 	width: 20%;
 	display: inline-block;
 	position: absolute;
-	transition: all 1s ease-out;
+	transition: all 0.3s ease;
 	z-index: 1;
 	background-image: url(../img/2.png);
 	background-size: cover;
@@ -76,7 +94,7 @@ body{
 	width: 20%;
 	display: inline-block;
 	position: absolute;
-	transition: all 1s ease-out;
+	transition: all 0.3s ease;
 	z-index: 1;
 	background-image: url(../img/3.png);
 	background-size: cover;
@@ -90,7 +108,7 @@ body{
 	width: 20%;
 	display: inline-block;
 	position: absolute;
-	transition: all 1s ease-out;
+	transition: all 0.3s ease;
 	z-index: 1;
 	background-image: url(../img/4.png);
 	background-size: cover;
@@ -104,7 +122,7 @@ body{
 	width: 20%;
 	display: inline-block;
 	position: absolute;
-	transition: all 1s ease-out;
+	transition: all 0.3s ease;
 	z-index: 1;
 	background-image: url(../img/5.png);
 	background-size: cover;
@@ -113,26 +131,31 @@ body{
 .jia_flyin{
 	transform: translateY(0);
 	margin-top: 0;
+	transition: all 2s ease;
 }
 
 .chuan_flyin{
 	transform: translateY(0);
 	margin-top: 0;
+	transition: all 2s ease;
 }
 
 .gang_flyin{
 	transform: translateY(0);
 	margin-top: 0;
+	transition: all 2s ease;
 }
 
 .fei_flyin{
 	transform: translateY(0);
 	margin-top: 0;
+	transition: all 2s ease;
 }
 
 .yu_flyin{
 	transform: translateY(0);
 	margin-top: 0;
+	transition: all 2s ease;
 }
 
 .jia_transform{
@@ -141,7 +164,7 @@ body{
 	height: 100%;
 	width: 20%;
 	display: inline-block;
-	transition: all 0.3s linear;
+	transition: all 0.;s linear;
 	z-index: 1;
 }
 .chaun_transform{
@@ -151,7 +174,7 @@ body{
 	height: 100%;
 	width: 20%;
 	display: inline-block;
-	transition: all 0.3s linear;
+	transition: all 0.;s linear;
 	z-index: 1;
 }
 .gang_transform{
@@ -161,7 +184,7 @@ body{
 	height: 100%;
 	width: 20%;
 	display: inline-block;
-	transition: all 0.3s linear;
+	transition: all 0.;s linear;
 	z-index: 1;
 }
 .fei_transform{
@@ -171,7 +194,7 @@ body{
 	height: 100%;
 	width: 20%;
 	display: inline-block;
-	transition: all 0.3s linear;
+	transition: all 0.;s linear;
 	z-index: 1;
 }
 .yu_transform{
@@ -181,7 +204,7 @@ body{
 	height: 100%;
 	width: 20%;
 	display: inline-block;
-	transition: all 0.3s linear;
+	transition: all 0.;s linear;
 	z-index: 1;
 }
 
@@ -241,7 +264,7 @@ body{
 .jia_block{
 	width: 100%;
 	height: 100%;
-	transition: all 0.7s linear;
+	transition: all 0.7s linear5
 }
 
 .chuan_block{
@@ -292,17 +315,17 @@ body{
 @-webkit-keyframes imgAnimation{  
     0%{ margin-top: 300%;opacity:0; }  
     /*50%{margin-top: 10%;opacity: .5;}*/
-    100%{ margin-top: 0%;opacity: 1;}  
+    100%{ margin-top: 5%;opacity: 1;}  
  }
 
 .imgAnimation{  
       animation-name: imgAnimation;
       animation: imgAnimation 1s alternate;
-      margin-top: 0%;
+      margin-top: 5%;
  }
 
 @-webkit-keyframes fallbackAnimation{
-	0%{ margin-top: 0%;opacity: 1; }  
+	0%{ margin-top: 5%;opacity: 1; }  
     /*50%{margin-top: 10%;opacity: .5;}*/
     100%{ margin-top: 300%;opacity:0;}
 }
@@ -355,7 +378,7 @@ body{
 	transform: rotate(270deg);
 	border: 4px solid #1EBCC5;
 }
-  
+
 /*Begin Animation*/
 .content{
 	/* display: none; */
