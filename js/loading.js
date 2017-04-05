@@ -1,39 +1,24 @@
-var isWait = true;
-    setTimeout(function(){
-        if(isWait){
-            var d = dialog({
-             title: '你怎么能不点屏幕呢？你不会真以为在加载吧？',
-             content: '<img style="width:100px" src="./img/dialogImg.gif">',
-             okValue: '刚才是我表弟在玩',
-             ok: function okFunction() {
-                 $("#gameMusic")[0].remove();
-                 WindowsBegin();
-             },
-             cancelValue: '这歌不错啊，我听会',
-             cancel: function () {
-                alert('大兄弟你不点不就能听了吗？');
-                 return false;
-             }
-            });
-            d.show();
-            $("#gameMusic")[0].play();
-        }
-    },4000);
-
-$('.loading').one('click', function(e) {
-    if(isWait){
-        e.stopPropagation();
-        WindowsBegin();
-        isWait = false;
-    }
-	
- });
-function WindowsBegin () {
-	$("#windowsBegin")[0].play();
-	$('.loading').fadeOut(3000, function() {
-        $(".content").animate({opacity:1}, 3000,function(){
-            $('.loading').remove();
+$(document).ready(function(){
+  //视频前的加载动画
+  var myVid=$(".BeginAnimation video")[0];
+  myVid.oncanplaythrough=function(){
+    $(".loading_BG").fadeOut(1500, function() {
+        $(".BeginAnimation").animate({opacity:1}, 1000,function(){
+            myVid.play();
         });
-  
-	});
-}
+    });
+  }
+  myVid.onended = function(){
+    $(".BeginAnimation").fadeOut(1500, function() {
+        $(".content").animate({opacity:1}, 1000,function(){
+            $('.BeginAnimation').remove();
+            document.getElementById("jia").classList.add("jia_flyin");
+            document.getElementById("chuan").classList.add("chuan_flyin");
+            document.getElementById("gang").classList.add("gang_flyin");
+            document.getElementById("fei").classList.add("fei_flyin");
+            document.getElementById("yu").classList.add("yu_flyin");
+        });
+    });
+  }
+});
+
