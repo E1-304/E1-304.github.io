@@ -1,13 +1,13 @@
 $(document).ready(function(){
   //视频前的加载动画
-  var myVid=$("#beginVideo")[0];
-  myVid.oncanplaythrough=function(){
+  var myVid=$(".BeginAnimation video")[0];
+  setTimeout(function(){
     $(".loading_BG").fadeOut(1500, function() {
         $(".BeginAnimation").animate({opacity:1}, 1000,function(){
             myVid.play();
         });
-    });
-  }
+    })
+}, 3800);
   myVid.onended = function(){
     $(".BeginAnimation").fadeOut(1500, function() {
         $(".content").animate({opacity:1}, 1000,function(){
