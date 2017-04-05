@@ -1,4 +1,4 @@
-$(document).ready(function(){
+window.onload = function(){
   //视频前的加载动画
   var myVid=$(".BeginAnimation video")[0];
   myVid.oncanplaythrough=function(){
@@ -20,5 +20,4 @@ $(document).ready(function(){
         });
     });
   }
-});
-
+}
