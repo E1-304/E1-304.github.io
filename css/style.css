@@ -658,10 +658,10 @@ body{
   text-shadow: 0 0 6px #bce4ff;
   height: 20px;
   width: 150px;
+  font-size: 20px;
 }
 .loading span {
   display: block;
-  text-transform: uppercase;
   position: absolute;
   right: 30px;
   height: 20px;
