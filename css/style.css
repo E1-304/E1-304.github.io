@@ -13,303 +13,348 @@ a{text-decoration:none; color:#656565;}
 .clearfix{zoom:1;}
 
 html,body{
-	height: 100%;
+  height: 100%;
 }
 
 body{
-	overflow:-scroll;
-	overflow-y:hidden;
-	overflow-x:hidden;
+  overflow:-scroll;
+  overflow-y:hidden;
+  overflow-x:hidden;
 }
 
 .content{
-	height: 100%;
-	width: 100%;
-	position: relative;
-	transition: all 0.1s linear;
-	z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: all 0.1s linear;
+  z-index: 1;
 }
 
 .big_head{
-	position: fixed;
-	width: 100%;
-	height: 52px;
-	z-index: 2;
-	border-bottom: 2px solid white;
-	background-color: rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  height: 52px;
+  z-index: 3;
+  border-bottom: 2px solid white;
+  background-color: rgba(0,0,0,0.1);
 }
 
 .big_head_icon{
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	background-image: url(../img/big_head_icon.png);
-	background-size: 100% auto;
-	margin: 10px auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url(../img/big_head_icon.png);
+  background-size: 100% auto;
+  margin: 10px auto;
 }
 
-.little_box_jia:hover,
-.little_box_chuan:hover,
-.little_box_gang:hover,
 .little_box_fei:hover,
-.little_box_yu:hover{
-	transform: scale(1.1);
-	z-index: 99;
-	transition: all 0.3s ease;
-	/*overflow:hidden;*/
-}
-
-.little_box_jia{
-	margin-top: 1000px;
-	background-color: #198de8;
-	height: 100%;
-	width: 20%;
-	display: inline-block;
-	position: absolute;
-	transition: all 0.3s ease;
-	z-index: 1;
-	background-image: url(../img/1.png);
-	background-size: cover;
-}
-
-.little_box_chuan{
-	margin-top: 2000px;
-	background-color: #e3d059;
-	margin-left: 20%;
-	height: 100%;
-	width: 20%;
-	display: inline-block;
-	position: absolute;
-	transition: all 0.3s ease;
-	z-index: 1;
-	background-image: url(../img/2.png);
-	background-size: cover;
-}
-
-.little_box_gang{
-	margin-top: 3000px;
-	background-color: #c9544e;
-	margin-left: 40%;
-	height: 100%;
-	width: 20%;
-	display: inline-block;
-	position: absolute;
-	transition: all 0.3s ease;
-	z-index: 1;
-	background-image: url(../img/3.png);
-	background-size: cover;
+.little_box_yu:hover,
+.little_box_gang:hover,
+.little_box_chuan:hover,
+.little_box_jia:hover{
+  transform: scale(1.1);
+  z-index: 2;
+  transition: all 0.3s ease;
+  overflow:hidden;
 }
 
 .little_box_fei{
-	margin-top: 4000px;
-	background-color: #48bf52;
-	margin-left: 60%;
-	height: 100%;
-	width: 20%;
-	display: inline-block;
-	position: absolute;
-	transition: all 0.3s ease;
-	z-index: 1;
-	background-image: url(../img/4.png);
-	background-size: cover;
+  margin-top: 1000px;
+  background-color: #198de8;
+  height: 100%;
+  width: 20%;
+  display: inline-block;
+  position: absolute;
+  transition: all 0.5s ease;
+  z-index: 1;
+  background-image: url(../img/1.png);
+  background-size: cover;
 }
 
 .little_box_yu{
-	margin-top: 5000px;
-	background-color: #6f677c;
-	margin-left: 80%;
-	height: 100%;
-	width: 20%;
-	display: inline-block;
-	position: absolute;
-	transition: all 0.3s ease;
-	z-index: 1;
-	background-image: url(../img/5.png);
-	background-size: cover;
+  margin-top: 2000px;
+  background-color: #e3d059;
+  margin-left: 20%;
+  height: 100%;
+  width: 20%;
+  display: inline-block;
+  position: absolute;
+  transition: all 0.5s ease;
+  z-index: 1;
+  background-image: url(../img/2.png);
+  background-size: cover;
 }
 
-.jia_flyin{
-	transform: translateY(0);
-	margin-top: 0;
-	transition: all 2s ease;
+.little_box_gang{
+  margin-top: 3000px;
+  background-color: #c9544e;
+  margin-left: 40%;
+  height: 100%;
+  width: 20%;
+  display: inline-block;
+  position: absolute;
+  transition: all 0.5s ease;
+  z-index: 1;
+  background-image: url(../img/3.png);
+  background-size: cover;
 }
 
-.chuan_flyin{
-	transform: translateY(0);
-	margin-top: 0;
-	transition: all 2s ease;
+.little_box_chuan{
+  margin-top: 4000px;
+  background-color: #48bf52;
+  margin-left: 60%;
+  height: 100%;
+  width: 20%;
+  display: inline-block;
+  position: absolute;
+  transition: all 0.5s ease;
+  z-index: 1;
+  background-image: url(../img/4.png);
+  background-size: cover;
 }
 
-.gang_flyin{
-	transform: translateY(0);
-	margin-top: 0;
-	transition: all 2s ease;
+.little_box_jia{
+  margin-top: 5000px;
+  background-color: #6f677c;
+  margin-left: 80%;
+  height: 100%;
+  width: 20%;
+  display: inline-block;
+  position: absolute;
+  transition: all 0.5s ease;
+  z-index: 1;
+  background-image: url(../img/5.png);
+  background-size: cover;
 }
 
 .fei_flyin{
-	transform: translateY(0);
-	margin-top: 0;
-	transition: all 2s ease;
+  transform: translateY(0);
+  margin-top: 0;
+  transition: all 2s ease ;
 }
 
 .yu_flyin{
-	transform: translateY(0);
-	margin-top: 0;
-	transition: all 2s ease;
+  transform: translateY(0);
+  margin-top: 0;
+  transition: all 2s ease ;
 }
 
-.jia_transform{
-	background-color: #198de8;
-	filter: brightness(.5);
-	height: 100%;
-	width: 20%;
-	display: inline-block;
-	transition: all 0.;s linear;
-	z-index: 1;
+.gang_flyin{
+  transform: translateY(0);
+  margin-top: 0;
+  transition: all 2s ease ;
 }
-.chaun_transform{
-	background-color: #e3d059;
-	filter: brightness(.5);
-	margin-left: 20%;
-	height: 100%;
-	width: 20%;
-	display: inline-block;
-	transition: all 0.;s linear;
-	z-index: 1;
+
+.chuan_flyin{
+  transform: translateY(0);
+  margin-top: 0;
+  transition: all 2s ease ;
 }
-.gang_transform{
-	background-color: #c9544e;
-	filter: brightness(.5);
-	margin-left: 40%;
-	height: 100%;
-	width: 20%;
-	display: inline-block;
-	transition: all 0.;s linear;
-	z-index: 1;
+
+.jia_flyin{
+  transform: translateY(0);
+  margin-top: 0;
+  transition: all 2s ease ;
 }
+
 .fei_transform{
-	background-color: #48bf52;
-	filter: brightness(.5);
-	margin-left: 60%;
-	height: 100%;
-	width: 20%;
-	display: inline-block;
-	transition: all 0.;s linear;
-	z-index: 1;
+  background-color: #198de8;
+  filter: brightness(.5);
+  filter:blur(3px);
+  height: 100%;
+  width: 20%;
+  display: inline-block;
+  transition: all 0.5s linear alternate;
+  z-index: 1;
 }
 .yu_transform{
-	background-color: #6f677c;
-	filter: brightness(.5);
-	margin-left: 80%;
-	height: 100%;
-	width: 20%;
-	display: inline-block;
-	transition: all 0.;s linear;
-	z-index: 1;
+  background-color: #e3d059;
+  filter: brightness(.5);
+  margin-left: 20%;
+  filter:blur(3px);
+  height: 100%;
+  width: 20%;
+  display: inline-block;
+  transition: all 0.5s linear alternate;
+  z-index: 1;
+}
+.gang_transform{
+  background-color: #c9544e;
+  filter: brightness(.5);
+  margin-left: 40%;
+  filter:blur(3px);
+  height: 100%;
+  width: 20%;
+  display: inline-block;
+  transition: all 0.5s linear alternate;
+  z-index: 1;
+}
+.chuan_transform{
+  background-color: #48bf52;
+  filter: brightness(.5);
+  margin-left: 60%;
+  filter:blur(3px);
+  height: 100%;
+  width: 20%;
+  display: inline-block;
+  transition: all 0.5s linear alternate;
+  z-index: 1;
+}
+.jia_transform{
+  background-color: #6f677c;
+  filter: brightness(.5);
+  margin-left: 80%;
+  filter:blur(3px);
+  height: 100%;
+  width: 20%;
+  display: inline-block;
+  transition: all 0.5s linear alternate;
+  z-index: 1;
 }
 
 .head_icon{
-	width: 50px;
-	height: 50px;
-	background-image: url(../img/fei.png);
-	background-size: 100% auto;
-	border-radius: 50%;
-	background-color: purple;
-	margin: 0 auto;
-	margin-top: 200px;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/fei.png);
+  background-size: 100% auto;
+  border-radius: 50%;
+  background-color: purple;
+  margin: 0 auto;
+  margin-top: 200px;
 }
 
 .text{
-	padding: 50px 40px;
-	color: white;
-	font-weight: bold;
-	font-size: 14px;
-}
-
-.big_box_jia{
-	background-color: #198de8;
-	display: inline-block;
-	position: absolute;
-	z-index: 99;
-}
-
-.big_box_chuan{
-	background-color: #e3d059;
-	display: inline-block;
-	position: absolute;
-	z-index: 99;
-}
-
-.big_box_gang{
-	background-color: #c9544e;
-	display: inline-block;
-	position: absolute;
-	z-index: 99;
+  padding: 50px 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .big_box_fei{
-	background-color: #48bf52;
-	display: inline-block;
-	position: absolute;
-	z-index: 99;
+  background-color: #198de8;
+  display: inline-block;
+  position: absolute;
+  z-index: 99;
 }
 
 .big_box_yu{
-	background-color: #6f677c;
-	display: inline-block;
-	position: absolute;
-	z-index: 99;
+  background-color: #e3d059;
+  display: inline-block;
+  position: absolute;
+  z-index: 99;
 }
 
-.jia_block{
-	width: 100%;
-	height: 100%;
-	transition: all 0.7s linear5
+.big_box_gang{
+  background-color: #c9544e;
+  display: inline-block;
+  position: absolute;
+  z-index: 99;
 }
 
-.chuan_block{
-	width: 100%;
-	height: 100%;
-	transition: all 0.7s linear;
+.big_box_chuan{
+  background-color: #48bf52;
+  display: inline-block;
+  position: absolute;
+  z-index: 99;
 }
 
-.gang_block{
-	width: 100%;
-	height: 100%;
-	transition: all 0.7s linear;
+.big_box_jia{
+  background-color: #6f677c;
+  display: inline-block;
+  position: absolute;
+  z-index: 99;
 }
 
 .fei_block{
-	width: 100%;
-	height: 100%;
-	transition: all 0.7s linear;
+  width: 100%;
+  height: 100%;
+  transition: all 0.7s linear;
 }
 
 .yu_block{
-	width: 100%;
-	height: 100%;
-	transition: all 0.7s linear;
+  width: 100%;
+  height: 100%;
+  transition: all 0.7s linear;
 }
 
-/*.onclick_before{
-	opacity: 1;
-}*/
+.gang_block{
+  width: 100%;
+  height: 100%;
+  transition: all 0.7s linear;
+}
+
+.chuan_block{
+  width: 100%;
+  height: 100%;
+  transition: all 0.7s linear;
+}
+
+.jia_block{
+  width: 100%;
+  height: 100%;
+  transition: all 0.7s linear;
+}
+
+/*.footer_gang{
+  opacity: 0;
+  width: 100%;
+  height: 10%;
+  margin: 0 auto;
+  
+  margin-top: 200%;
+  background-color: white;
+  transition: all 0.7s linear;
+  bottom: 0;
+}
+
+.footer_gang:hover{
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  font-size: bold;
+  margin: 0 auto;
+  margin-top: 200%;
+  opacity: 1;
+  background-size: 100% 10%;
+}
+*/
+
+
+
+
+.onclick_before{
+  opacity: 1;
+  position: relative;
+  transition: all 0.5s linear;
+  display: none;
+}
 
 .onclick_after{
-	display: none;
+  opacity: 0;
+}
+
+.onclick_display_none{
+  display: none;
 }
 
 .personal_statement{
-	opacity: 1;
-	/*padding-left: 50%;*/
-	margin-top: 300%;
-	font-weight: bold;
-	font-size: 25px;
-	color: #543210;
-	z-index: 999;
-	width: 100%;
-	height: 100%;
-	position: relative;
+  opacity: 1;
+  /*padding-left: 50%;*/
+  margin-top: 300%;
+  font-weight: bold;
+  font-size: 25px;
+  color: #543210;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.text{
+  width: 200px;
+  height: 200px;
+  display: inline-block;
 }
 
 @-webkit-keyframes imgAnimation{  
@@ -325,64 +370,67 @@ body{
  }
 
 @-webkit-keyframes fallbackAnimation{
-	0%{ margin-top: 5%;opacity: 1; }  
+  0%{ margin-top: 5%;opacity: 1; }  
     /*50%{margin-top: 10%;opacity: .5;}*/
     100%{ margin-top: 300%;opacity:0;}
 }
 
 .fallbackAnimation{
-	animation-name: fallbackAnimation;
+  animation-name: fallbackAnimation;
      animation: fallbackAnimation 1s alternate;
      margin-top: 300%;
+     /*animation-fill-mode: forwards;*/
 }
 /*小叉叉按钮*/
 .close_button{
-	position: absolute;
-	top: 20px;
-	right: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .circle{
-	display: block;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	border: 2px solid #1EBCC5;
-	position: relative;
-	transition: all 0.3s ease-in-out;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #1EBCC5;
+  position: relative;
+  transition: all 0.3s ease-in-out;
 }
 .close::before{
-	position: absolute;
-	content: '';
-	height: 2px;
-	width: 70%;
-	background-color: orange;
-	top: 45%;
-	transform: rotate(45deg);
-	left: 14%;
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 70%;
+  background-color: orange;
+  top: 45%;
+  transform: rotate(45deg);
+  left: 14%;
 }
 
 .close::after{
-	position: absolute;
-	content: '';
-	height: 2px;
-	width: 70%;
-	background-color: orange;
-	top: 45%;
-	transform: rotate(-45deg);
-	left: 14%;
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 70%;
+  background-color: orange;
+  top: 45%;
+  transform: rotate(-45deg);
+  left: 14%;
 }
 
 .close:hover{
-	transition: all 0.3s ease-in-out;
-	transform: rotate(270deg);
-	border: 4px solid #1EBCC5;
+  transition: all 0.3s ease-in-out;
+  transform: rotate(270deg);
+  border: 4px solid #1EBCC5;
 }
+
 
 /*Begin Animation*/
 .content{
 	/* display: none; */
 	opacity: 0;
+  background-color: black;
 }
 
 @-webkit-keyframes title {
