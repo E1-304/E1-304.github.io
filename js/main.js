@@ -78,15 +78,15 @@
 			document.getElementsByClassName("personal_statement")[1].classList.add("imgAnimation")
 		},1000);		
 	}
-	document.getElementById("gang").onclick = function() {
-		document.getElementById("gang").classList.remove("little_box_gang","gang_transform");
-		document.getElementById("gang").classList.add("big_box_gang","gang_block");
-		document.getElementsByClassName("onclick_before")[2].classList.add("onclick_after");
-		setTimeout(function(){
-			document.getElementsByClassName("personal_statement")[2].classList.remove("fallbackAnimation");
-			document.getElementsByClassName("personal_statement")[2].classList.add("imgAnimation");
-		},1000);
-	}
+	// document.getElementById("gang").onclick = function() {
+	// 	document.getElementById("gang").classList.remove("little_box_gang","gang_transform");
+	// 	document.getElementById("gang").classList.add("big_box_gang","gang_block");
+	// 	document.getElementsByClassName("onclick_before")[2].classList.add("onclick_after");
+	// 	setTimeout(function(){
+	// 		document.getElementsByClassName("personal_statement")[2].classList.remove("fallbackAnimation");
+	// 		document.getElementsByClassName("personal_statement")[2].classList.add("imgAnimation");
+	// 	},1000);
+	// }
 	document.getElementById("chuan").onclick = function() {
 		document.getElementById("chuan").classList.remove("little_box_chuan","chuan_transform");
 		document.getElementById("chuan").classList.add("big_box_chuan","chuan_block");
@@ -123,15 +123,15 @@
 		},700);
 		document.getElementsByClassName("personal_statement")[1].classList.add("fallbackAnimation");
 	}
-	document.getElementById("gang_return").onclick = function(e) {
-		e.stopPropagation();//事件冒泡解决方法
-		setTimeout(function(){
-			document.getElementById("gang").classList.remove("big_box_gang","gang_block");
-			document.getElementById("gang").classList.add("little_box_gang","gang_transform");
-			document.getElementsByClassName("onclick_before")[2].classList.remove("onclick_after");
-		},700);
-		document.getElementsByClassName("personal_statement")[2].classList.add("fallbackAnimation");
-	}
+	// document.getElementById("gang_return").onclick = function(e) {
+	// 	e.stopPropagation();//事件冒泡解决方法
+	// 	setTimeout(function(){
+	// 		document.getElementById("gang").classList.remove("big_box_gang","gang_block");
+	// 		document.getElementById("gang").classList.add("little_box_gang","gang_transform");
+	// 		document.getElementsByClassName("onclick_before")[2].classList.remove("onclick_after");
+	// 	},700);
+	// 	document.getElementsByClassName("personal_statement")[2].classList.add("fallbackAnimation");
+	// }
 	document.getElementById("chuan_return").onclick = function(e) {
 		e.stopPropagation();//事件冒泡解决方法
 		setTimeout(function(){

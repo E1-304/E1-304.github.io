@@ -88,7 +88,7 @@ body{
 
 .little_box_gang{
   margin-top: 3000px;
-  background-color: #c9544e;
+  /* background-color: #c9544e; */
   margin-left: 40%;
   height: 100%;
   width: 20%;
@@ -180,7 +180,7 @@ body{
   z-index: 1;
 }
 .gang_transform{
-  background-color: #c9544e;
+ /*  background-color: #c9544e; */
   filter: brightness(.5);
   margin-left: 40%;
   filter:blur(3px);
@@ -246,7 +246,7 @@ body{
 }
 
 .big_box_gang{
-  background-color: #c9544e;
+ /*  background-color: #c9544e; */
   display: inline-block;
   position: absolute;
   z-index: 99;

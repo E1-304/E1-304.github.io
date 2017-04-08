@@ -22,3 +22,7 @@ window.onload = function(){
   }
 };
 
+$('#gang').click(function(){
+  window.open("http://todaylg.com");
+})
+
