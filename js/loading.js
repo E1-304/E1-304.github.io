@@ -20,7 +20,7 @@ window.onload = function(){
     }, 3600);
   }else{
     // 手机端处理
-    $('.BeginAnimation').remove();
+    $('video').remove();
     setTimeout(function(){
       $(".loading_BG").fadeOut(1500, function() {
         $(".content").animate({opacity:1}, 1000,function(){
