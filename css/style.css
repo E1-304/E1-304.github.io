@@ -431,6 +431,7 @@ body{
 /*Begin Animation*/
 .content{
 	/* display: none; */
+  overflow: hidden;
 	opacity: 0;
   background-color: black;
 }
