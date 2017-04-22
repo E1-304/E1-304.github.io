@@ -477,7 +477,7 @@ body{
 }
 
 /*丁量川的个人内容*/
-.dlc_box{
+#dlc_box{
   width: 100%;
   height: 900px;
   background-color: black;
@@ -493,14 +493,14 @@ body{
   margin-top: 5%;
 }
 
-.dlc_box span{
+#dlc_box span{
   display: inline-block;
   margin-top: 5%;
   font-size: 90px;
   color: white;
 }
 
-.dlc_box p{
+#dlc_box p{
   color: white;
 }
 
