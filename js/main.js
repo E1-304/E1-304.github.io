@@ -73,7 +73,7 @@ document.getElementById("fei").onmouseover = function() {
 		document.getElementById("fei").classList.remove("little_box_fei","fei_transform");
 		document.getElementById("fei").classList.add("big_box_fei","fei_block");
 		document.getElementById("fei_name").classList.add("footer_name_disappear");
-		document.getElementsByClassName("onclick_before")[0].classList.add("onclick_after");
+		// document.getElementsByClassName("onclick_before")[0].classList.add("onclick_after");
 		setTimeout(function(){
 			document.getElementsByClassName("personal_statement")[0].classList.remove("fallbackAnimation");
 			document.getElementsByClassName("personal_statement")[0].classList.add("imgAnimation");
@@ -95,7 +95,7 @@ document.getElementById("fei").onmouseover = function() {
 		document.getElementById("yu").classList.remove("little_box_yu","yu_transform");
 		document.getElementById("yu").classList.add("big_box_yu","yu_block");
 		document.getElementById("yu_name").classList.add("footer_name_disappear");
-		document.getElementsByClassName("onclick_before")[1].classList.add("onclick_after");
+		// document.getElementsByClassName("onclick_before")[1].classList.add("onclick_after");
 		setTimeout(function(){
 			document.getElementsByClassName("personal_statement")[1].classList.remove("fallbackAnimation");
 			document.getElementsByClassName("personal_statement")[1].classList.add("imgAnimation")
@@ -139,7 +139,7 @@ document.getElementById("fei").onmouseover = function() {
 		document.getElementById("chuan").classList.remove("little_box_chuan","chuan_transform");
 		document.getElementById("chuan").classList.add("big_box_chuan","chuan_block");
 		document.getElementById("chuan_name").classList.add("footer_name_disappear");
-		document.getElementsByClassName("onclick_before")[3].classList.add("onclick_after");
+		// document.getElementsByClassName("onclick_before")[3].classList.add("onclick_after");
 		setTimeout(function(){
 			document.getElementsByClassName("personal_statement")[3].classList.remove("fallbackAnimation");
 			document.getElementsByClassName("personal_statement")[3].classList.add("imgAnimation");
@@ -162,7 +162,7 @@ document.getElementById("fei").onmouseover = function() {
         document.getElementById("jia").classList.remove("little_box_jia","jia_transform");
 		document.getElementById("jia").classList.add("big_box_jia","jia_block");
 		document.getElementById("jia_name").classList.add("footer_name_disappear");
-		document.getElementsByClassName("onclick_before")[4].classList.add("onclick_after");
+		// document.getElementsByClassName("onclick_before")[4].classList.add("onclick_after");
 		setTimeout(function(){
 			document.getElementsByClassName("personal_statement")[4].classList.remove("fallbackAnimation");
 			document.getElementsByClassName("personal_statement")[4].classList.add("imgAnimation");
@@ -185,7 +185,7 @@ document.getElementById("fei").onmouseover = function() {
 		setTimeout(function(){
 			document.getElementById("fei").classList.remove("big_box_fei","fei_block");
 			document.getElementById("fei").classList.add("little_box_fei","fei_transform");
-			document.getElementsByClassName("onclick_before")[0].classList.remove("onclick_after");
+			// document.getElementsByClassName("onclick_before")[0].classList.remove("onclick_after");
 			document.getElementById("fei_name").classList.remove("footer_name_disappear");
 		},700);
 		document.getElementsByClassName("personal_statement")[0].classList.add("fallbackAnimation");
@@ -207,7 +207,7 @@ document.getElementById("fei").onmouseover = function() {
 		setTimeout(function(){
 			document.getElementById("yu").classList.remove("big_box_yu","yu_block");
 			document.getElementById("yu").classList.add("little_box_yu","yu_transform");
-			document.getElementsByClassName("onclick_before")[1].classList.remove("onclick_after");
+			// document.getElementsByClassName("onclick_before")[1].classList.remove("onclick_after");
 			document.getElementById("yu_name").classList.remove("footer_name_disappear");
 		},700);
 		document.getElementsByClassName("personal_statement")[1].classList.add("fallbackAnimation");
@@ -251,7 +251,7 @@ document.getElementById("fei").onmouseover = function() {
 		setTimeout(function(){
 			document.getElementById("chuan").classList.remove("big_box_chuan","chuan_block");
 			document.getElementById("chuan").classList.add("little_box_chuan","chuan_transform");
-			document.getElementsByClassName("onclick_before")[3].classList.remove("onclick_after");
+			// document.getElementsByClassName("onclick_before")[3].classList.remove("onclick_after");
 			document.getElementById("chuan_name").classList.remove("footer_name_disappear");
 		},700);
 		document.getElementsByClassName("personal_statement")[3].classList.add("fallbackAnimation");
@@ -273,7 +273,7 @@ document.getElementById("fei").onmouseover = function() {
 		setTimeout(function(){
 			document.getElementById("jia").classList.remove("big_box_jia","jia_block");
 			document.getElementById("jia").classList.add("little_box_jia","jia_transform");
-			document.getElementsByClassName("onclick_before")[4].classList.remove("onclick_after");
+			// document.getElementsByClassName("onclick_before")[4].classList.remove("onclick_after");
 			document.getElementById("jia_name").classList.remove("footer_name_disappear");
 		},700);
 		document.getElementsByClassName("personal_statement")[4].classList.add("fallbackAnimation");

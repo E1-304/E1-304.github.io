@@ -19,9 +19,9 @@ html,body{
 body{
   overflow:-scroll;
   overflow-y:hidden;
-  /* overflow-x:hidden; */
+  overflow-x:hidden;
 }
-
+/*主盒子*/
 .content{
   height: 100%;
   width: 100%;
@@ -29,7 +29,7 @@ body{
   transition: all 0.1s linear;
   z-index: 1;
 }
-
+/*word宇设计的网站的头像*/
 .big_head{
   position: fixed;
   width: 100%;
@@ -47,7 +47,7 @@ body{
   background-size: 100% auto;
   margin: 10px auto;
 }
-
+/*解决点击return会弹出personal_statement的bug*/
 .banClickTimes{
   width: 100%;
   height: 100%;
@@ -55,7 +55,7 @@ body{
   position: fixed;
   background-color: rgba(0,0,0,0);
 }
-
+/*未点击之前鼠标悬停的效果*/
 .little_box_fei:hover,
 .little_box_yu:hover,
 .little_box_gang:hover,
@@ -66,10 +66,10 @@ body{
   transition: all 0.3s ease;
   overflow:hidden;
 }
-
+/*每个人未点击之前的效果*/
 .little_box_fei{
   margin-top: 1000px;
-  background-color: black;
+  background-color: #cbd3d6;
   height: 100%;
   width: 20%;
   display: inline-block;
@@ -82,7 +82,7 @@ body{
 
 .little_box_yu{
   margin-top: 2000px;
-  background-color: #e3d059;
+  background-color: #cbd3d6;
   margin-left: 20%;
   height: 100%;
   width: 20%;
@@ -96,7 +96,7 @@ body{
 
 .little_box_gang{
   margin-top: 3000px;
-  background-color: #c9544e;
+  background-color: #cbd3d6;
   margin-left: 40%;
   height: 100%;
   width: 20%;
@@ -110,7 +110,7 @@ body{
 
 .little_box_chuan{
   margin-top: 4000px;
-  background-color: #48bf52;
+  background-color: #cbd3d6;
   margin-left: 60%;
   height: 100%;
   width: 20%;
@@ -124,7 +124,7 @@ body{
 
 .little_box_jia{
   margin-top: 5000px;
-  background-color: #6f677c;
+  background-color: #cbd3d6;
   margin-left: 80%;
   height: 100%;
   width: 20%;
@@ -136,6 +136,43 @@ body{
   background-size: cover;
 }
 
+/*@media only screen and (min-width: 400px){
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content:after,
+  .content:before{
+    content: " ";
+    display: table;
+  }
+
+  .little_box_fei:after,
+  .little_box_fei:before,
+  .little_box_yu:after,
+  .little_box_yu:before,
+  .little_box_gang:after,
+  .little_box_gang:before,
+  .little_box_chuan:after,
+  .little_box_chuan:before,
+  .little_box_jia:after,
+  .little_box_jia:before{
+    content: " ";
+    display: table;
+  }
+
+  .little_box_fei,
+  .little_box_yu,
+  .little_box_gang,
+  .little_box_chuan,
+  .little_box_jia{
+    width: 100%;
+    height: 30%;
+    margin-left: 0;
+  }
+}
+*/
+/*每个人开场飞入的效果*/
 .fei_flyin{
   transform: translateY(0);
   margin-top: 0;
@@ -165,9 +202,9 @@ body{
   margin-top: 0;
   transition: all 2s ease ;
 }
-
+/*每个人点击之后变成全屏的效果*/
 .fei_transform{
-  background-color: black;
+  background-color: #198de8;
   filter: brightness(.5);
   filter:blur(3px);
   height: 100%;
@@ -220,8 +257,8 @@ body{
   transition: all 0.5s linear alternate;
   z-index: 1;
 }
-
-.head_icon{
+/*每个人头像的样式*/
+/*.head_icon{
   width: 50px;
   height: 50px;
   background-image: url(../img/fei.png);
@@ -230,80 +267,90 @@ body{
   background-color: purple;
   margin: 0 auto;
   margin-top: 200px;
-}
-
-.text{
+}*/
+/*测试的文字*/
+/*.text{
   padding: 50px 40px;
   color: white;
   font-weight: bold;
   font-size: 14px;
-}
-
+}*/
+/*点击之后变成全屏之后的效果*/
 .big_box_fei{
   background-color: black;
   display: inline-block;
   position: absolute;
   z-index: 3;
+  opacity: 1;
 }
 
 .big_box_yu{
-  background-color: #e3d059;
+  background-color: black;
   display: inline-block;
   position: absolute;
   z-index: 3;
+  opacity: 1;
 }
 
 .big_box_gang{
-  background-color: #c9544e;
+  background-color: black;
   display: inline-block;
   position: absolute;
   z-index: 3;
+  opacity: 1;
 }
 
 .big_box_chuan{
-  background-color: #48bf52;
+  background-color: black;
   display: inline-block;
   position: absolute;
   z-index: 3;
+  opacity: 1;
 }
 
 .big_box_jia{
-  background-color: #6f677c;
+  background-color: black;
   display: inline-block;
   position: absolute;
   z-index: 3;
+  opacity: 1;
 }
 
 .fei_block{
   width: 100%;
   height: 100%;
   transition: all 0.7s linear;
+  opacity: 1;
 }
 
 .yu_block{
   width: 100%;
   height: 100%;
   transition: all 0.7s linear;
+  opacity: 1;
 }
 
 .gang_block{
   width: 100%;
   height: 100%;
   transition: all 0.7s linear;
+  opacity: 1;
 }
 
 .chuan_block{
   width: 100%;
   height: 100%;
   transition: all 0.7s linear;
+  opacity: 1;
 }
 
 .jia_block{
   width: 100%;
   height: 100%;
   transition: all 0.7s linear;
+  opacity: 1;
 }
-
+/*照片底部的名片卡*/
 .footer_name{
   width: 10%;
   height: 0%;
@@ -318,7 +365,7 @@ body{
   text-align: center;
   line-height: 100px;
 }
-
+/*鼠标悬停名片卡的出现效果*/
 .footer_name_transform{
   width: 90%;
   height: 10%;
@@ -328,12 +375,12 @@ body{
   font-weight: bold;
   line-height: 60px;
 }
-
+/*点击之后去掉名片卡*/
 .footer_name_disappear{
   display: none;
 }
-
-.onclick_before{
+/*开头的名片*/
+/*.onclick_before{
   opacity: 1;
   position: relative;
   transition: all 0.5s linear;
@@ -342,15 +389,15 @@ body{
 
 .onclick_after{
   opacity: 0;
-}
-
+}*/
+/*个人内容填充的盒子*/
 .personal_statement{
   opacity: 1;
   margin-top: 300%;
   font-weight: bold;
   font-size: 25px;
   color: #543210;
-  z-index: 4;
+  z-index: 999;
   width: 100%;
   height: 100%;
   position: relative;
@@ -361,18 +408,18 @@ body{
   height: 200px;
   display: inline-block;
 }
-
+/*个人内容飞入的动画*/
 @-webkit-keyframes imgAnimation{  
     0%{ margin-top: 300%;opacity:0; }  
-    100%{ margin-top: 5%;opacity: 1;}  
+    100%{ margin-top: 3.5%;opacity: 1;}  
  }
 
 .imgAnimation{  
       animation-name: imgAnimation;
       animation: imgAnimation 1s alternate;
-      margin-top: 5%;
+      margin-top: 3.5%;
  }
-
+/*个人内容飞出的动画*/
 @-webkit-keyframes fallbackAnimation{
   0%{ margin-top: 5%;opacity: 1; }  
     100%{ margin-top: 300%;opacity:0;}
@@ -389,6 +436,7 @@ body{
   position: absolute;
   top: 20px;
   right: 20px;
+  opacity: 0.7;
 }
 
 .circle{
@@ -396,7 +444,7 @@ body{
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 2px solid #1EBCC5;
+  border: 2px solid white;
   position: relative;
   transition: all 0.3s ease-in-out;
 }
@@ -405,7 +453,7 @@ body{
   content: '';
   height: 2px;
   width: 70%;
-  background-color: orange;
+  background-color: white;
   top: 45%;
   transform: rotate(45deg);
   left: 14%;
@@ -416,7 +464,7 @@ body{
   content: '';
   height: 2px;
   width: 70%;
-  background-color: orange;
+  background-color: white;
   top: 45%;
   transform: rotate(-45deg);
   left: 14%;
@@ -425,7 +473,139 @@ body{
 .close:hover{
   transition: all 0.3s ease-in-out;
   transform: rotate(270deg);
-  border: 4px solid #1EBCC5;
+  border: 4px solid white;
+}
+
+/*丁量川的个人内容*/
+.dlc_box{
+  width: 100%;
+  height: 900px;
+  background-color: black;
+  text-align: center;
+}
+
+.dlc_gif{
+  width: 234px;
+  height: 157px;
+  background-image: url(../img/dlc_gif.gif);
+  margin:0 auto;
+  margin-top: 5%;
+
+
+}
+
+.dlc_box span{
+  display: inline-block;
+  margin-top: 5%;
+  font-size: 90px;
+  color: white;
+}
+
+.dlc_box p{
+  color: white;
+}
+
+.dlc_blog{
+  margin-top: 5%;
+}
+
+section, section div {
+  -webkit-transition-duration: .6s;
+  transition-duration: .6s;
+}
+
+section, .button {  
+  transition-timing-function: ease; 
+}
+
+section {
+  display: inline-block;
+  position: relative;
+  padding: .375rem .375rem 0;
+  height: 2.5rem;
+  background: #A9ADB6;
+  border-radius: .25rem;
+  perspective: 300;
+  box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0,0,0,.2), inset 0 .25rem 1rem rgba(0,0,0,.1);
+}
+
+
+.button { 
+  opacity: 0;
+}
+
+.cover {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  transform-origin: center bottom;
+  transform-style: preserve-3d;
+  font: 22px/2 "icon";
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.innie, .outie, .spine, .shadow { position: absolute; width: 100%; }
+
+.innie, .outie {
+  height: 100%;
+  border-radius: .25rem;
+}
+.innie:after, 
+.outie:after { content:"打开新世界的大门"; }
+
+.innie {
+  background-color: #67E2FE;
+  text-shadow: 0 -2px 4px rgba(0,0,0,.2);
+}
+
+.spine {
+  top: .25rem;
+  background: #20C7F3;
+  height: .25rem;
+  transform: rotateX(90deg);
+  transform-origin: center top;
+}
+
+.shadow {
+  top: 100%;
+  left: 0;
+  height: 3.5rem;
+  transform-origin: center top;
+  transform: rotateX(90deg);
+  opacity: 0;
+  z-index: 0;    
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.6) 0%, transparent 100%);
+  border-radius: .4rem;
+}
+
+.outie {
+  background-color: #2EC8FA;
+  transform: translateZ(.25rem);
+  text-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+section:hover { background: #EBEFF2; }
+section:hover .button { opacity: 1; }
+
+section:hover .cover, 
+section:hover .innie, 
+section:hover .spine, 
+section:hover .outie, 
+section:hover .spine { 
+  transition-timing-function: cubic-bezier(.2,.7,.1,1.1); }
+
+section:hover .cover { 
+    transform: rotateX(-120deg);  
+}
+
+section:hover .innie { background-color: #3ADAFC; }
+section:hover .spine { background-color: #52B1E0; }
+section:hover .outie { background-color: #2174A0; color: rgba(255,255,255,0); }
+section:hover .shadow { 
+      opacity: 1;
+      transform: rotateX(45deg) scale(.95);
 }
 
 /*Begin Animation*/
