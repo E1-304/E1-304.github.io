@@ -113,28 +113,38 @@ document.getElementById("fei").onmouseover = function() {
 			document.body.removeChild(first);
 		},1500);		
 	}
-	// document.getElementById("gang").onclick = function() {
-	// 	document.getElementById("gang").classList.remove("little_box_gang","gang_transform");
-	// 	document.getElementById("gang").classList.add("big_box_gang","gang_block");
-	// 	document.getElementById("gang_name").classList.add("footer_name_disappear");
-	// 	document.getElementsByClassName("onclick_before")[2].classList.add("onclick_after");
-	// 	setTimeout(function(){
-	// 		document.getElementsByClassName("personal_statement")[2].classList.remove("fallbackAnimation");
-	// 		document.getElementsByClassName("personal_statement")[2].classList.add("imgAnimation");
-	// 	},1000);
-	// 	function addNewDiv(){
-	// 		var newDiv = document.createElement("div");
-	// 		newDiv.id = "banClickTimes";
-	// 		newDiv.className = "banClickTimes";
-	// 		var first = document.body.firstChild;
-	// 		document.body.insertBefore(newDiv,first);
-	// 	}
-	// 	addNewDiv();
-	// 	setTimeout(function(){
-	// 		var first = document.body.firstChild;
-	// 		document.body.removeChild(first);
-	// 	},1500);
-	// }
+	var canvasflag = true;
+	document.getElementById("gang").onclick = function() {
+		document.getElementById("gang").classList.remove("little_box_gang","gang_transform");
+		document.getElementById("gang").classList.add("big_box_gang","gang_block");
+		document.getElementById("gang_name").classList.add("footer_name_disappear");
+		// document.getElementsByClassName("onclick_before")[2].classList.add("onclick_after");
+		
+		setTimeout(function(){
+			document.getElementsByClassName("personal_statement")[2].classList.remove("fallbackAnimation");
+			document.getElementsByClassName("personal_statement")[2].classList.add("imgAnimation");
+			document.getElementById("LG_box").style.display='block';
+			if(canvasflag){
+				bufferDraw();
+				canvasflag = false;
+			}else{
+				textSetChangerIncrement = 0;
+			}
+			
+		},1000);
+		function addNewDiv(){
+			var newDiv = document.createElement("div");
+			newDiv.id = "banClickTimes";
+			newDiv.className = "banClickTimes";
+			var first = document.body.firstChild;
+			document.body.insertBefore(newDiv,first);
+		}
+		addNewDiv();
+		setTimeout(function(){
+			var first = document.body.firstChild;
+			document.body.removeChild(first);
+		},1500);
+	}
 	document.getElementById("chuan").onclick = function() {
 		document.getElementById("chuan").classList.remove("little_box_chuan","chuan_transform");
 		document.getElementById("chuan").classList.add("big_box_chuan","chuan_block");
@@ -224,28 +234,29 @@ document.getElementById("fei").onmouseover = function() {
 			document.body.removeChild(first);
 		},1500);
 	}
-	// document.getElementById("gang_return").onclick = function(e) {
-	// 	e.stopPropagation();//事件冒泡解决方法
-	// 	setTimeout(function(){
-	// 		document.getElementById("gang").classList.remove("big_box_gang","gang_block");
-	// 		document.getElementById("gang").classList.add("little_box_gang","gang_transform");
-	// 		document.getElementsByClassName("onclick_before")[2].classList.remove("onclick_after");
-	// 		document.getElementById("gang_name").classList.remove("footer_name_disappear");
-	// 	},700);
-	// 	document.getElementsByClassName("personal_statement")[2].classList.add("fallbackAnimation");
-	// 	function addNewDiv(){
-	// 		var newDiv = document.createElement("div");
-	// 		newDiv.id = "banClickTimes";
-	// 		newDiv.className = "banClickTimes";
-	// 		var first = document.body.firstChild;
-	// 		document.body.insertBefore(newDiv,first);
-	// 	}
-	// 	addNewDiv();
-	// 	setTimeout(function(){
-	// 		var first = document.body.firstChild;
-	// 		document.body.removeChild(first);
-	// 	},1500);
-	// }
+	document.getElementById("gang_return").onclick = function(e) {
+		e.stopPropagation();//事件冒泡解决方法
+		setTimeout(function(){
+			document.getElementById("gang").classList.remove("big_box_gang","gang_block");
+			document.getElementById("gang").classList.add("little_box_gang","gang_transform");
+			// document.getElementsByClassName("onclick_before")[2].classList.remove("onclick_after");
+			document.getElementById("gang_name").classList.remove("footer_name_disappear");
+			document.getElementById("LG_box").style.display='none';
+		},700);
+		document.getElementsByClassName("personal_statement")[2].classList.add("fallbackAnimation");
+		function addNewDiv(){
+			var newDiv = document.createElement("div");
+			newDiv.id = "banClickTimes";
+			newDiv.className = "banClickTimes";
+			var first = document.body.firstChild;
+			document.body.insertBefore(newDiv,first);
+		}
+		addNewDiv();
+		setTimeout(function(){
+			var first = document.body.firstChild;
+			document.body.removeChild(first);
+		},1500);
+	}
 	document.getElementById("chuan_return").onclick = function(e) {
 		e.stopPropagation();//事件冒泡解决方法		
 		setTimeout(function(){

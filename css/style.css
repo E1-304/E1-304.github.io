@@ -490,8 +490,6 @@ body{
   background-image: url(../img/dlc_gif.gif);
   margin:0 auto;
   margin-top: 5%;
-
-
 }
 
 .dlc_box span{
@@ -508,6 +506,53 @@ body{
 .dlc_blog{
   margin-top: 5%;
 }
+
+/*LG's Personal Content*/
+#LG_box{
+  background:#000000;
+  display: none;
+}
+
+
+.buttonHolder{
+ position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.LG_button{
+ float:left;
+  height: 70px;
+  margin: 0 30px 30px 0;
+  position: relative;
+  width: 70px;      
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
+.LG_button:after{
+  color:#e9e6e4;
+  content: "";
+  display: block;
+  font-size: 30px;
+  height: 30px;
+  text-decoration: none;
+  text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+  position: absolute;
+  width: 30px;
+}
+
+.tick:after{
+  content: "More";
+  left:23px;
+  top:16px;
+}
+
+.tick:hover:after{
+  color:#83d244;
+  text-shadow:0px 0px 6px #83d244;
+}
+
 
 section, section div {
   -webkit-transition-duration: .6s;
