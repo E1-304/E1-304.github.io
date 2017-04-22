@@ -153,7 +153,7 @@ document.getElementById("fei").onmouseover = function() {
 		setTimeout(function(){
 			document.getElementsByClassName("personal_statement")[3].classList.remove("fallbackAnimation");
 			document.getElementsByClassName("personal_statement")[3].classList.add("imgAnimation");
-			console.log("asdasd");
+			document.getElementById("dlc_box").style.display='block';
 		},1000);
 		function addNewDiv(){
 			var newDiv = document.createElement("div");
@@ -264,6 +264,7 @@ document.getElementById("fei").onmouseover = function() {
 			document.getElementById("chuan").classList.add("little_box_chuan","chuan_transform");
 			// document.getElementsByClassName("onclick_before")[3].classList.remove("onclick_after");
 			document.getElementById("chuan_name").classList.remove("footer_name_disappear");
+			document.getElementById("dlc_box").style.display='none';
 		},700);
 		document.getElementsByClassName("personal_statement")[3].classList.add("fallbackAnimation");
 		function addNewDiv(){

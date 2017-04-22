@@ -482,6 +482,7 @@ body{
   height: 900px;
   background-color: black;
   text-align: center;
+  display: none;
 }
 
 .dlc_gif{
