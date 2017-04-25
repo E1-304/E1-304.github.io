@@ -1159,7 +1159,9 @@ section:hover .shadow {
         width:1000px;
     }
 }
-/*新增*/
+
+
+/*帅逼飞的css*/
 
 @keyframes btn_noise {
   0% {
@@ -1459,6 +1461,18 @@ section:hover .shadow {
   100% {
     box-shadow: inset 0 0 0 20px white, 0 0 30px white;
   }
+}
+.gif1{
+  position: absolute;
+  top: 10px;
+  left: -400px;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+}
+.gif1 img{
+  width: 100%;
+  height: 100%;
 }
 .btn {
   border-radius: 50%;
