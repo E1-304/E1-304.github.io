@@ -555,6 +555,7 @@ body{
 }
 /*Jia's Personal Content*/
 #Jia_box{
+  display: none;
   position: absolute;
   top:0;
   left: 0;
