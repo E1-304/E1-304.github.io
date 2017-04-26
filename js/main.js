@@ -172,6 +172,17 @@ document.getElementById("fei").onmouseover = function() {
         document.getElementById("jia").classList.remove("little_box_jia","jia_transform");
 		document.getElementById("jia").classList.add("big_box_jia","jia_block");
 		document.getElementById("jia_name").classList.add("footer_name_disappear");
+		$("#jia_img1").animate({opacity:1},2000, function() {
+        	$("#jia_img2").animate({opacity:1},1100, function() {
+          		$("#jia_img3").animate({opacity:1},1320, function() {
+          			$("#jia_img4").animate({opacity:1},900, function() {
+          				$("#jia_img5").animate({opacity:1},800, function() {
+          					$("#jia_img6").animate({opacity:1},1000, function() {})
+          				})
+          			})
+          		})
+          	})
+        });
 		// document.getElementsByClassName("onclick_before")[4].classList.add("onclick_after");
 		setTimeout(function(){
 			document.getElementsByClassName("personal_statement")[4].classList.remove("fallbackAnimation");
@@ -282,23 +293,36 @@ document.getElementById("fei").onmouseover = function() {
 	}
 	document.getElementById("jia_return").onclick = function(e) {
 		e.stopPropagation();//事件冒泡解决方法		
-		setTimeout(function(){
-			document.getElementById("jia").classList.remove("big_box_jia","jia_block");
-			document.getElementById("jia").classList.add("little_box_jia","jia_transform");
-			// document.getElementsByClassName("onclick_before")[4].classList.remove("onclick_after");
-			document.getElementById("jia_name").classList.remove("footer_name_disappear");
-		},700);
-		document.getElementsByClassName("personal_statement")[4].classList.add("fallbackAnimation");
-		function addNewDiv(){
-			var newDiv = document.createElement("div");
-			newDiv.id = "banClickTimes";
-			newDiv.className = "banClickTimes";
-			var first = document.body.firstChild;
-			document.body.insertBefore(newDiv,first);
-		}
-		addNewDiv();
-		setTimeout(function(){
-			var first = document.body.firstChild;
-			document.body.removeChild(first);
-		},1500);
+		$("#jia_img1").animate({opacity:0},500, function() {
+        	$("#jia_img2").animate({opacity:0},400, function() {
+          		$("#jia_img3").animate({opacity:0},620, function() {
+          			$("#jia_img4").animate({opacity:0},500, function() {
+          				$("#jia_img5").animate({opacity:0},900, function() {
+          					$("#jia_img6").animate({opacity:0},800, function() {
+          						setTimeout(function(){
+								document.getElementById("jia").classList.remove("big_box_jia","jia_block");
+								document.getElementById("jia").classList.add("little_box_jia","jia_transform");
+								// document.getElementsByClassName("onclick_before")[4].classList.remove("onclick_after");
+								document.getElementById("jia_name").classList.remove("footer_name_disappear");
+							},700);
+							document.getElementsByClassName("personal_statement")[4].classList.add("fallbackAnimation");
+							function addNewDiv(){
+								var newDiv = document.createElement("div");
+								newDiv.id = "banClickTimes";
+								newDiv.className = "banClickTimes";
+								var first = document.body.firstChild;
+								document.body.insertBefore(newDiv,first);
+							}
+							addNewDiv();
+							setTimeout(function(){
+								var first = document.body.firstChild;
+								document.body.removeChild(first);
+							},1500);
+          					})
+          				})
+          			})
+          		})
+          	})
+        });
+		
 	}
