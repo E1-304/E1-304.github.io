@@ -1536,9 +1536,9 @@ section:hover .shadow {
   right: 0;
   left: 0;
   bottom: 0;
-  margin: 0 auto;
-  width: 50rem;
-  height: 50rem;
+  margin: auto;
+  width: 40rem;
+  height: 40rem;
   position: absolute;
   cursor: pointer;
 }
@@ -1546,9 +1546,9 @@ section:hover .shadow {
   opacity: 0;
   content: "";
   position: absolute;
-  width: 58rem;
-  height: 56rem;
-  margin: -2rem -3rem -2rem -3rem;
+  width: 42rem;
+  height: 42rem;
+  /*margin: -2rem -3rem -2rem -3rem;*/
   border-radius: 50%;
   z-index: -10;
 }
@@ -1582,7 +1582,7 @@ section:hover .shadow {
 }
 .btn-video{
   width: 34rem;
-  height: 33rem;
+  height: 28rem;
   margin: auto;
 }
 .btn-line {
