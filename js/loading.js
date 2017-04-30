@@ -17,7 +17,7 @@ window.onload = function(){
           myVid.play();
         });
       })
-    }, 3600);
+    }, 1000);
   }else{
     // 手机端处理
     $('video').remove();
