@@ -91,27 +91,32 @@ document.getElementById("fei").onmouseover = function() {
 			document.body.removeChild(first);
 		},1500);
 	}
-	document.getElementById("yu").onclick = function() {
+	document.getElementById("yu").onclick = function(e) {
 		document.getElementById("yu").classList.remove("little_box_yu","yu_transform");
 		document.getElementById("yu").classList.add("big_box_yu","yu_block");
 		document.getElementById("yu_name").classList.add("footer_name_disappear");
 		// document.getElementsByClassName("onclick_before")[1].classList.add("onclick_after");
 		setTimeout(function(){
 			document.getElementsByClassName("personal_statement")[1].classList.remove("fallbackAnimation");
-			document.getElementsByClassName("personal_statement")[1].classList.add("imgAnimation")
+			document.getElementsByClassName("personal_statement")[1].classList.add("imgAnimation");
+			document.getElementById("lcy_box").style.display='block';
+			document.getElementsByTagName("body")[0].style.overflow = 'visible';
+			document.getElementsByClassName("content")[0].style.overflow = 'visible';
 		},1000);
-		function addNewDiv(){
+		if(e.target.id == 'yu_return'){
+			function addNewDiv(){
 			var newDiv = document.createElement("div");
 			newDiv.id = "banClickTimes";
 			newDiv.className = "banClickTimes";
 			var first = document.body.firstChild;
 			document.body.insertBefore(newDiv,first);
 		}
-		addNewDiv();
-		setTimeout(function(){
-			var first = document.body.firstChild;
-			document.body.removeChild(first);
-		},1500);		
+			addNewDiv();
+			setTimeout(function(){
+				var first = document.body.firstChild;
+				document.body.removeChild(first);
+			},1500);	
+		}
 	}
 	var canvasflag = true;
 	document.getElementById("gang").onclick = function() {
@@ -342,12 +347,16 @@ document.getElementById("fei").onmouseover = function() {
 		},1500);
 	}
 	document.getElementById("yu_return").onclick = function(e) {
-		e.stopPropagation();//事件冒泡解决方法		
+		e.stopPropagation();//事件冒泡解决方法	
 		setTimeout(function(){
+			document.getElementsByTagName("body")[0].style.overflow = 'hidden';
+			document.getElementsByClassName("content")[0].style.overflow = 'hidden';
 			document.getElementById("yu").classList.remove("big_box_yu","yu_block");
 			document.getElementById("yu").classList.add("little_box_yu","yu_transform");
 			// document.getElementsByClassName("onclick_before")[1].classList.remove("onclick_after");
 			document.getElementById("yu_name").classList.remove("footer_name_disappear");
+			document.getElementById("lcy_box").style.display='none';
+
 		},700);
 		document.getElementsByClassName("personal_statement")[1].classList.add("fallbackAnimation");
 		function addNewDiv(){

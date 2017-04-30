@@ -212,7 +212,7 @@ window.lightGallery = function (element) {
 };
 
 lightGallery(document.getElementById('LG'));
-
+lightGallery(document.getElementById('LICHENYU'));
 /***/ })
 /******/ ]);
 
